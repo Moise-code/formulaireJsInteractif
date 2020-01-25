@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="form.css">
+   <title>Formulaire interactif</title>
+</head>
+<body>
+   <form id="lEform" class="leFormulaire">
+      
+      <input class="checker" name="sex" type="radio" value="homme">H
+      <input class="checker" name="sex" type="radio" value="femme">F
+      <span class="messageEntreeUtilisateurs">Un sex doit être selectionné.</span><br>
+
+      <input id="lastname" class="lesNomsAge" name="lastname" type="text" placeholder="Entrez votre nom">
+      <span class="messageEntreeUtilisateurs">Un nom doit avoir au minimum deux caractères.</span><br>
+
+      <input id="firstname" class="lesNomsAge" name="firtname" type="text" placeholder="Entrez votre prénom">
+      <span class="messageEntreeUtilisateurs">Un prénom doit avoir au minimum deux caractères.</span><br>
+
+      <input id="lAge" class="lesNomsAge" name="age" type="text" placeholder="Entrez votre âge">
+      <span class="messageEntreeUtilisateurs">L'âge doit être compris entre 5 et 100.</span><br>
+
+      <input id="lEpseudo" class="lesNomsAge" name="pseudo" type="text" placeholder="Entrez votre pseudo">
+      <span class="messageEntreeUtilisateurs">Le pseudo doit avoir au minimum 4 caractères.</span><br>
+
+      <input id="lEmdp" class="pass" name="password" type="password" placeholder="Entrez un mot de passe">
+      <span class="messageEntreeUtilisateurs">Le mot de passe doit contenir au minimun 8 caractères.</span><br>
+
+      <input id="rEpeatMdp" class="pass" type="password" placeholder="Confirmer le mot de passe">
+      <span class="messageEntreeUtilisateurs">Ce mot de passe n'est pas identique au 1er.</span><br>
+
+      
+      <select id="country" class="selection" name="lesPays" ><br>
+         <option value="none">Selectionnez votre pays</option>
+         <option value="belgique">Belgique</option>
+         <option value="canada">Canada</option>
+         <option value="afrique du sud">Afrique du sud</option>
+         <option value="nouvel zeland">Nouvel zeland</option>
+         <option value="chine">Chine</option>
+      </select><br>
+
+      <input type="checkbox" name="checkbox" id="ceCheck">
+      <label for="newsletter">Je désire recevoir une newsletter chaque mois</label><br>
+
+      <input class="sEnd" id="send" type="submit" value="Envoyer">
+      <input class="sEnd" type="reset" value="Réinitialiser">
+
+
+      <!--Code Javascript-->
+      <script src="form.js"></script>
+   </form>
+</body>
+</html>
