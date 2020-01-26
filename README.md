@@ -1,3 +1,3 @@
-## formulaireJs Intéractif
+# formulaireJs Intéractif
 
-# Exercice sur la manipulation du DOM
+## Exercice sur la manipulation du DOM
